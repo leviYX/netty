@@ -554,6 +554,9 @@
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <!-- 1.4.x does not work in Java10+ -->
         <jboss.marshalling.version>2.0.5.Final</jboss.marshalling.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.release>8</maven.compiler.release>
         <!-- pax-exam does not work on latest Java11 build -->
         <skipOsgiTestsuite>true</skipOsgiTestsuite>
       </properties>
@@ -908,6 +911,7 @@
     <module>transport-blockhound-tests</module>
     <module>microbench</module>
     <module>bom</module>
+    <module>my-module</module>
   </modules>
 
   <dependencyManagement>
