@@ -1,7 +1,9 @@
 package io.netty;
 
+import io.netty.bootstrap.Bootstrap;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        Bootstrap bootstrap = new Bootstrap();
     }
 }

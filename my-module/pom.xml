@@ -135,11 +135,6 @@
             <artifactId>netty-transport-rxtx</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <scope>runtime</scope>
-        </dependency>
 
         <dependency>
             <groupId>com.aayushatharva.brotli4j</groupId>
@@ -212,6 +207,25 @@
         <dependency>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
+        </dependency>
+
+        <!-- Netty核心 -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.100.Final</version>
+        </dependency>
+
+        <!-- Keep SLF4J / Logback versions aligned with the parent dependency management. -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
